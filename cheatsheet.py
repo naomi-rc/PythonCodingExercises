@@ -35,3 +35,51 @@ print("These are my inputs: ", integer_variable, string_variable, float_variable
 var1 = "hello"
 var1 += " world"
 print(var1)
+
+
+## Control structures ##
+# Booleans : True and False
+# Boolean operators: and, or, not
+
+# Lists
+empty_list = []
+my_list = [1, "two", [3]]
+print("This print two: ", my_list[1])
+
+# List operations
+print("This prints a list wutg my_list appended to another my_list: ", my_list + my_list)
+print("This prints a list with contents of my_list three times: ", my_list * 3)
+
+# strings are immutable lists
+
+# check if a value is in a list
+print(1 in my_list) #prints True
+print(not 1 in my_list) #prints False
+print(1 not in my_list) #prints False
+
+print(2 in my_list) #prints False
+print(not 2 in my_list) #prints True
+print(2 not in my_list) #prints True
+
+# list functions
+my_list.append(4)
+len(my_list)
+index = 0
+my_list.insert(index, "zero")
+print(my_list.index("zero")) # prints 0
+# others: max(list), min(list), list.count(item), list.remove(item), list.reverse(), list.sort(), sorted(list, reverse=True)
+
+# loops
+for value in my_list:    
+    print(value)
+for value in range(10):
+    print(value) # prints digits 0 to 9
+while True:
+    break 
+
+# range
+lower = 5
+upper = 12
+step = 2
+print(list(range(lower, upper, step))) # [5, 7, 9, 11]
+print(list(range(upper, lower, -step))) # [12, 10, 8, 6]
