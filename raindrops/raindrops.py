@@ -1,7 +1,5 @@
-def convert(number):
-    factors = {3:"Pling", 5:"Plang", 7:"Plong"}
-    result = ""
-    for factor, sound in factors.items():
-        result += sound if number % factor == 0 else ""
-    
+FACTORS = {3: "Pling", 5: "Plang", 7: "Plong"}
+
+def convert(number):    
+    result = ''.join(sound for factor, sound in FACTORS.items() if number % factor == 0)
     return result if result else str(number)
